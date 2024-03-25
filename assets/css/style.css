@@ -1,8 +1,311 @@
+body {
+    background-color: azure;
+}
+
 .header {
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    background-color: #053349;
     color: #ffffff;
+}
+
+.header h1 {
+    color: beige;
+    background-image: linear-gradient(135deg, #05b923 0%, #009cc4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+    font-size: 30px;
+}
+
+#avatar {
+    height: 100px;
+    width: 25%;
+    background-image: url("../images/avatar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform .5s ease;
+}
+
+#avatar:hover {
+    transform: scale(1.5);
+    transition: transform .5s ease;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav ul a {
+    font-size: 15px;
+    color: white;
+    margin: 7.5px;
+    background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+  
+nav ul a:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+}
+  
+nav ul a:hover {
+    background-position: 0;
+}
+  
+nav ul a:hover::before {
+    width:100%;
+}
+
+#hero {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#hero h1 {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+main {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-content {
+    margin: 5px 0;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.section-content h2 {
+    font-size: 30px;
+    border-right: 3px solid darkblue;
+    padding-right: 10px;
+    text-align: right;
+    flex: 0 0 15%;
+}
+
+.section-content div {
+    flex: 0 0 80%;
+}
+
+.section-content p {
+    font-size: 20px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+.section-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-flex {
+    border: solid 3px navy;
+    display: flex;
+    text-decoration: none;
+    align-items: flex-end;
+    margin: 5px 10px 5px 20px;
+    padding: 0 0 20px 0;
+    max-height: 150px;
+    min-height: 150px;
+    background-size: 150%;
+    font-size: 30px;
+    color: grey;
+    flex-basis: calc(50% - 30px);
+    position: relative;
+}
+
+.project-flex:first-child {
+    min-height: 350px;
+    flex-basis: 100%;
+}
+
+.project-flex:hover {
+    filter: brightness(125%);
+    transform: scale(1.025);
+    transition: transform .5s ease;
+    background-color: peachpuff;
+}
+
+.project-flex h3 {
+    font-size: 15px;
+    color: black;
+    background-color: #2a607c;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+}
+
+.project-flex span {
+    font-size: 12px;
+    color: white;
+    background-color: #08043f;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#horiseon {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: transform .5s ease;
+}
+
+#prework {
+    height: 150px;
+    margin-bottom: 25px;
+    background-image: url("../images/prework-study-guide.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform .5s ease;
+}
+
+#backend {
+    height: 150px;
+    margin-bottom: 25px;
+    background-image: url("../images/spring-boot.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform .5s ease;
+}
+
+#frontend {
+    height: 150px;
+    margin-bottom: 25px;
+    background-image: url("../images/angular.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform .5s ease;
+}
+
+#feast {
+    height: 150px;
+    margin-bottom: 25px;
+    background-image: url("../images/java.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform .5s ease;
+}
+
+.contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.contact ul a {
+    display: inline-block;
+    padding: 5px;
+}
+
+.contact ul a:hover {
+    transform: scale(1.25);
+    transition: transform .5s ease;
+}
+
+#phone {
+    height: 75px;
+    width: 75px;
+    background-image: url("../images/phone.png");
+    background-size: cover;
+    background-position: center;
+    transition: transform .5s ease;
+}
+
+#email {
+    height: 75px;
+    width: 75px;
+    background-image: url("../images/email.svg");
+    background-size: cover;
+    background-position: center;
+    transition: transform .5s ease;
+}
+
+#github {
+    height: 75px;
+    width: 75px;
+    background-image: url("../images/github.png");
+    background-size: cover;
+    background-position: center;
+    transition: transform .5s ease;
+}
+
+#linkedin {
+    height: 75px;
+    width: 75px;
+    background-image: url("../images/linkedin.webp");
+    background-size: cover;
+    background-position: center;
+    transition: transform .5s ease;
+}
+
+#discord {
+    height: 75px;
+    width: 75px;
+    background-image: url("../images/discord.webp");
+    background-size: cover;
+    background-position: center;
+    transition: transform .5s ease;
+}
+
+#youtube {
+    height: 75px;
+    width: 75px;
+    background-image: url("../images/youtube.png");
+    background-size: cover;
+    background-position: center;
+    transition: transform .5s ease;
 }
 
 .footer {
@@ -10,6 +313,83 @@
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    background-color: #2a607c;
+    background-color: #053349;
     color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    .section-content {
+        margin: 5px 0;
+        padding: 5px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .section-content div {
+        padding: 10px;
+    }
+
+    .section-content h2 {
+        font-size: 30px;
+        border-bottom: 3px solid darkblue;
+        border-right: none;
+        padding-bottom: 10px;
+        text-align: center;
+        flex: 0 0 15%;
+    }
+
+    .project-flex {
+        flex: 1 1 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-flex {
+        flex: 1 1 50%;
+    }
+
+    .section-content {
+        margin: 5px 0;
+        padding: 5px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .section-content div {
+        padding: 10px;
+    }
+
+    .section-content h2 {
+        font-size: 30px;
+        border-bottom: 3px solid darkblue;
+        border-right: none;
+        padding-bottom: 10px;
+        text-align: center;
+        flex: 0 0 15%;
+    }
+
+    .contact ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact ul a {
+        margin: 5px;
+    }
 }
