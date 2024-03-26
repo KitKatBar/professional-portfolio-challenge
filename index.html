@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <!-- Header of the webpage -->
     <header class="header">
         <h1>
             KitKatBar's Site
         </h1>
+        <!-- My avatar -->
         <section id="avatar"></section>
+        <!-- Nav bar with links to each section of the page (NOTE: Resume doesn't go anywhere for now) -->
         <nav>
             <ul>
                 <li>
@@ -30,16 +33,20 @@
             </ul>
         </nav>
     </header>
-    <section id="hero">
+    <!-- Banner with a subtitle defining the location -->
+    <section id="banner">
         <h1>
             San Jose, California - Silicon Valley
         </h1>
     </section>
+    <!-- Main section of the webpage -->
     <main>
+        <!-- About Me section -->
         <section class="section-content" id="about-me">
             <h2>
                 About Me
             </h2>
+            <!-- Had to use div here or the layout wouldn't work, not sure if there's another option -->
             <div>
                 <p>
                     Hello and welcome to my website! My name is Katriel Chiu and I am an aspiring
@@ -48,7 +55,7 @@
                     I ended up moving to San Jose and worked at the United States Patent & Trademark
                     Office. After working there for a little over 4 years, I realized that this was
                     not my lifelong passion. Coupled with having to adjust to remote work and the
-                    influence of the COVID-19 outbreak at it's peak, I made the uneasy decision to
+                    influence of the COVID-19 outbreak at its peak, I made the uneasy decision to
                     quit and I wanted to pursue my dreams of working in technology once again.
                 </p>
                 <p>
@@ -63,75 +70,85 @@
                 </p>
             </div>
         </section>
+        <!-- Projects section -->
         <section class="section-content" id="projects">
             <h2>
                 Projects
             </h2>
+            <!-- Had to use div here or the layout wouldn't work, not sure if there's another option -->
             <div>
-            <section class="section-flex">
-                <a id="horiseon" class="project-flex" href="https://kitkatbar.github.io/code-refactor-challenge/">
-                    <article>
-                        <h3>Horiseon Website</h3>
-                        <span>HTML/CSS</span>
-                    </article>
-                </a>
-                <a id="prework" class="project-flex" href="https://kitkatbar.github.io/prework-study-guide/">
-                    <article>
-                        <h3>Prework Study Guide</h3>
-                        <span>HTML/CSS</span>
-                    </article>
-                </a>
-                <a id="backend" class="project-flex" href="https://github.com/KitKatBar/TimeManagement-BackEnd">
-                    <article>
-                        <h3>Timesheet Manager (Backend)</h3>
-                        <span>Java/Spring Boot</span>
-                    </article>
-                </a>
-                <a id="frontend" class="project-flex" href="https://github.com/KitKatBar/TimeManagement-FrontEnd">
-                    <article>
-                        <h3>Timesheet Manager (Frontend)</h3>
-                        <span>Angular/TypeScript/HTML/CSS</span>
-                    </article>
-                </a>
-                <a id="feast" class="project-flex" href="https://github.com/KitKatBar/FeastFreedom-Clean">
-                    <article>
-                        <h3>Feast Freedom</h3>
-                        <span>Java/Spring Boot/HTML/CSS</span>
-                    </article>
-                </a>
-            </section>
+                <!-- Put all the projects into a flex container -->
+                <section class="section-flex">
+                    <!-- Each project becomes it's own flex container too -->
+                    <a id="horiseon" class="project-flex" href="https://kitkatbar.github.io/code-refactor-challenge/">
+                        <!-- Labels for each project -->
+                        <article>
+                            <h3>Horiseon Website</h3>
+                            <span>HTML/CSS</span>
+                        </article>
+                    </a>
+                    <a id="prework" class="project-flex" href="https://kitkatbar.github.io/prework-study-guide/">
+                        <article>
+                            <h3>Prework Study Guide</h3>
+                            <span>HTML/CSS</span>
+                        </article>
+                    </a>
+                    <a id="backend" class="project-flex" href="https://github.com/KitKatBar/TimeManagement-BackEnd">
+                        <article>
+                            <h3>Timesheet Manager (Backend)</h3>
+                            <span>Java/Spring Boot</span>
+                        </article>
+                    </a>
+                    <a id="frontend" class="project-flex" href="https://github.com/KitKatBar/TimeManagement-FrontEnd">
+                        <article>
+                            <h3>Timesheet Manager (Frontend)</h3>
+                            <span>Angular/TypeScript/HTML/CSS</span>
+                        </article>
+                    </a>
+                    <a id="feast" class="project-flex" href="https://github.com/KitKatBar/FeastFreedom-Clean">
+                        <article>
+                            <h3>Feast Freedom</h3>
+                            <span>Java/Spring Boot/HTML/CSS</span>
+                        </article>
+                    </a>
+                </section>
             </div>
         </section>
+        <!-- Contact section -->
         <section class="section-content" id="contact">
             <h2>
                 Contact
             </h2>
+            <!-- Had to use div here or the layout wouldn't work, not sure if there's another option -->
             <div>
+                <!-- Display all the contact options in a line and extra rows if needed -->
                 <address class="contact">
-            <ul>
-                <li>
-                    <a id="phone" href="tel:my-number-here"></a>
-                </li>
-                <li>
-                    <a id="email" href="mailto:katriel_chiu@msn.com"></a>
-                </li>
-                <li>
-                    <a id="github" href="https://github.com/KitKatBar/"></a>
-                </li>
-                <li>
-                    <a id="linkedin" href="https://www.linkedin.com/in/katriel-chiu-a8592aa8/"></a>
-                </li>
-                <li>
-                    <a id="discord" href="https://discord.com/users/117181812450525190"></a>
-                </li>
-                <li>
-                    <a id="youtube" href="https://www.youtube.com/channel/UCgPOWio1gCV7e5ohrsP-Qgw"></a>
-                </li>
-            </ul>
-        </address>
+                    <ul>
+                        <li>
+                            <!-- Links to my contact info (except my phone, don't call me) -->
+                            <a id="phone" href="tel:my-number-here"></a>
+                        </li>
+                        <li>
+                            <a id="email" href="mailto:katriel_chiu@msn.com"></a>
+                        </li>
+                        <li>
+                            <a id="github" href="https://github.com/KitKatBar/"></a>
+                        </li>
+                        <li>
+                            <a id="linkedin" href="https://www.linkedin.com/in/katriel-chiu-a8592aa8/"></a>
+                        </li>
+                        <li>
+                            <a id="discord" href="https://discord.com/users/117181812450525190"></a>
+                        </li>
+                        <li>
+                            <a id="youtube" href="https://www.youtube.com/channel/UCgPOWio1gCV7e5ohrsP-Qgw"></a>
+                        </li>
+                    </ul>
+                </address>
             </div>
         </section>
     </main>
+    <!-- Footer of the webpage -->
     <footer class="footer">
         <h3>Website created and designed by © KitKatBar 2024</h3>
     </footer>

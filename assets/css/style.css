@@ -1,7 +1,9 @@
+/* Background color for the entire page - each section can be changed on it's own if needed */
 body {
     background-color: azure;
 }
 
+/* Class selector layout for header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -14,15 +16,18 @@ body {
     color: #ffffff;
 }
 
+/* Nice color gradient for my nickname */
 .header h1 {
     color: beige;
     background-image: linear-gradient(135deg, #05b923 0%, #009cc4 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0px;
     font-size: 30px;
 }
 
+/* ID selector for my Funko avatar */
 #avatar {
     height: 100px;
     width: 25%;
@@ -33,17 +38,21 @@ body {
     transition: transform .5s ease;
 }
 
+/* Animation when hovering over my avatar */
 #avatar:hover {
     transform: scale(1.5);
     transition: transform .5s ease;
 }
 
+/* Tag selector for the nav bar */
 nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+/* Hover effect for each of the nav bar items
+   Credits to this site: https://css-tricks.com/css-link-hover-effects/ */
 nav ul a {
     font-size: 15px;
     color: white;
@@ -54,6 +63,7 @@ nav ul a {
     display: inline-block;
     padding: 5px 0;
     position: relative;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.5s ease-in-out;
@@ -79,7 +89,8 @@ nav ul a:hover::before {
     width:100%;
 }
 
-#hero {
+/* ID selector for banner picture for the website */
+#banner {
     height: 400px;
     width: 100%;
     margin-bottom: 25px;
@@ -89,7 +100,8 @@ nav ul a:hover::before {
     position: relative;
 }
 
-#hero h1 {
+/* Subtitle for the banner */
+#banner h1 {
     background-color: black;
     color: white;
     font-size: 20px;
@@ -99,12 +111,14 @@ nav ul a:hover::before {
     right: 0;
 }
 
+/* Tag selector to page-wrap the main content of the webpage */
 main {
     max-width: 88%;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Class selector for each section of the webpage */
 .section-content {
     margin: 5px 0;
     padding: 5px 0;
@@ -115,6 +129,7 @@ main {
     justify-content: center;
 }
 
+/* Label for each section */
 .section-content h2 {
     font-size: 30px;
     border-right: 3px solid darkblue;
@@ -123,22 +138,27 @@ main {
     flex: 0 0 15%;
 }
 
+/* Used to separate the content from the label */
 .section-content div {
     flex: 0 0 80%;
 }
 
+/* Font size for the text in the About Me section */
 .section-content p {
     font-size: 20px;
     margin-left: 20px;
     padding-bottom: 20px;
+    line-height: 1.5;
 }
 
+/* Class selector for putting all the projects into a flex container */
 .section-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* Class selector for defining each project into their own separate flex container */
 .project-flex {
     border: solid 3px navy;
     display: flex;
@@ -155,11 +175,13 @@ main {
     position: relative;
 }
 
+/* Making the first project bigger than the others */
 .project-flex:first-child {
     min-height: 350px;
     flex-basis: 100%;
 }
 
+/* Animation when hovering over each project */
 .project-flex:hover {
     filter: brightness(125%);
     transform: scale(1.025);
@@ -167,6 +189,7 @@ main {
     background-color: peachpuff;
 }
 
+/* Name for each project adjusted to the top-left corner of the box */
 .project-flex h3 {
     font-size: 15px;
     color: black;
@@ -176,6 +199,7 @@ main {
     top: 0;
 }
 
+/* Technologies used in each project adjusted to the bottom-right corner of the box */
 .project-flex span {
     font-size: 12px;
     color: white;
@@ -186,6 +210,7 @@ main {
     right: 0;
 }
 
+/* The following are just ID selectors for each project to display the image within the box */
 #horiseon {
     height: 400px;
     width: 100%;
@@ -236,6 +261,7 @@ main {
     transition: transform .5s ease;
 }
 
+/* Class selector for defining the space between each contact option */
 .contact ul {
     display: flex;
     flex-wrap: wrap;
@@ -249,11 +275,13 @@ main {
     padding: 5px;
 }
 
+/* Animation when hovering over each contact option */
 .contact ul a:hover {
     transform: scale(1.25);
     transition: transform .5s ease;
 }
 
+/* The following are just ID selectors for each icon representing the contact options */
 #phone {
     height: 75px;
     width: 75px;
@@ -308,6 +336,7 @@ main {
     transition: transform .5s ease;
 }
 
+/* Class selector layout for footer */
 .footer {
     padding: 30px;
     clear: both;
@@ -317,6 +346,7 @@ main {
     color: #ffffff;
 }
 
+/* Media query for defining layout when resizing for devices with a display of 992 pixels and smaller */
 @media screen and (max-width: 992px) {
     nav ul {
         flex-direction: column;
@@ -354,34 +384,8 @@ main {
     }
 }
 
+/* Media query for defining layout when resizing for devices with a display of 768 pixels and smaller */
 @media screen and (max-width: 768px) {
-    .project-flex {
-        flex: 1 1 50%;
-    }
-
-    .section-content {
-        margin: 5px 0;
-        padding: 5px 0;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: center;
-    }
-
-    .section-content div {
-        padding: 10px;
-    }
-
-    .section-content h2 {
-        font-size: 30px;
-        border-bottom: 3px solid darkblue;
-        border-right: none;
-        padding-bottom: 10px;
-        text-align: center;
-        flex: 0 0 15%;
-    }
-
     .contact ul {
         display: grid;
         grid-template-columns: repeat(3, auto);
