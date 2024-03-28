@@ -1,4 +1,4 @@
-# Code Refactor Challenge - Horiseon Website
+# Professional Portfolio Challenge - My First Website!
 
 ## Description
 
